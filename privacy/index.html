@@ -24,19 +24,22 @@
 </head>
 <body>
   <h1>Privacy Policy</h1>
-  <p class="muted">Effective date: May 28, 2026</p>
+  <p class="muted">Effective date: June 10, 2026</p>
 
   <p>Soccer 2026 is an independent fan companion app for match schedules, host city guides, team alerts, fan map check-ins, and tournament planning. The app is designed to work without user accounts, advertising trackers, or precise location collection.</p>
 
   <h2>Data We Collect</h2>
-  <p>We do not sell, rent, or share personal data. The app does not use analytics SDKs, advertising SDKs, third-party trackers, or account registration.</p>
+  <p>We do not sell, rent, or share personal data. The app does not use advertising SDKs, third-party trackers, or account registration.</p>
 
   <h2>Fan Map Check-Ins</h2>
   <p>If you use the Fan Map check-in feature, the app sends a limited anonymous signal to our Cloudflare Worker: the team you selected, the host city or fan spot you chose, the approximate day of the check-in, and a server-hashed random app-local identifier used only to prevent duplicate check-ins. We do not collect exact GPS location, names, email addresses, phone numbers, comments, photos, chat messages, contacts, advertising identifiers, or device tokens for this feature.</p>
   <p>Fan Map data is shown only as aggregated counts and heat levels, such as how many fans of a team checked in around a host city or fan spot. We do not show individual check-ins.</p>
 
+  <h2>Anonymous Product Analytics</h2>
+  <p>The app can send anonymous product analytics events to Supabase to help us understand whether core features work well. These events can include app open, onboarding progress, selected team code, paywall source, purchase-flow outcome, notification choice, city-lock interactions, Fan Map interactions, app version, build number, iOS version, language/locale, and a random app-local install identifier. Analytics events are not linked to an account because the app does not have accounts. They are not used for advertising or tracking across apps or websites.</p>
+
   <h2>On-Device Preferences</h2>
-  <p>The app stores your selected team, onboarding status, notification preferences, local Fan Map identifier, and purchase entitlement state locally on your device using Apple UserDefaults and StoreKit APIs. This data is used only to make the app work for you. The local Fan Map identifier is sent only when you choose to check in and is hashed by the server before storage.</p>
+  <p>The app stores your selected team, onboarding status, notification preferences, local Fan Map identifier, local analytics install identifier, first-open flag, and purchase entitlement state locally on your device using Apple UserDefaults and StoreKit APIs. This data is used only to make the app work for you and to measure product performance anonymously. The local Fan Map identifier is sent only when you choose to check in and is hashed by the server before storage.</p>
 
   <h2>Notifications</h2>
   <p>If you enable match notifications, iOS asks for notification permission. Notification scheduling is handled locally on your device through Apple notification APIs. We do not receive your notification settings or device token.</p>
@@ -45,16 +48,16 @@
   <p>The app can make HTTPS requests to our Cloudflare Worker proxy at <code>https://wc2026-proxy.ikorkod.workers.dev</code>. The proxy serves public tournament schedule data, Fan Map aggregate data, and can forward standings or live score requests to a live football data provider. These requests do not include your name, email address, precise location, contacts, photos, or chat messages.</p>
 
   <h2>Purchases</h2>
-  <p>In-app purchases are processed by Apple through StoreKit. We do not receive or store your payment card details. Apple may process purchase information according to Apple's own privacy policy.</p>
+  <p>In-app purchases are processed by Apple through StoreKit. We do not receive or store your payment card details. The app can log anonymous purchase-flow events such as purchase started, completed, cancelled, failed, restore started, and restore completed. Apple may process purchase information according to Apple's own privacy policy.</p>
 
   <h2>Children's Privacy</h2>
   <p>The app does not knowingly collect personal information from children. Because we do not collect personal data, there is no child personal data to request, sell, or share.</p>
 
   <h2>GDPR and CCPA</h2>
-  <p>We do not maintain user accounts or remote profiles. Fan Map check-ins are stored as short-lived de-duplication records and aggregate counts. If you contact us directly by email, we will use your email address only to respond to your request.</p>
+  <p>We do not maintain user accounts or remote profiles. Fan Map check-ins are stored as short-lived de-duplication records and aggregate counts. Anonymous product analytics use a random app-local install identifier. If you contact us directly by email, we will use your email address only to respond to your request.</p>
 
   <h2>Third-Party Services</h2>
-  <p>The app relies on Apple StoreKit for purchases, Apple notification APIs for local notifications, and Cloudflare Workers for the API proxy and Fan Map aggregation. We may use a live football data provider for public tournament updates. We do not use these services to build advertising profiles.</p>
+  <p>The app relies on Apple StoreKit for purchases, Apple notification APIs for local notifications, Cloudflare Workers for the API proxy and Fan Map aggregation, and Supabase for anonymous product analytics. We may use a live football data provider for public tournament updates. We do not use these services to build advertising profiles.</p>
 
   <h2>Changes</h2>
   <p>We may update this policy if the app changes. The updated policy will be posted at this URL with a new effective date.</p>
